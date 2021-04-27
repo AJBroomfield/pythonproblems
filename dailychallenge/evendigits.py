@@ -13,3 +13,4 @@ def even_digits(start, finish):
     
     return(str_solution)
 
+print(even_digits(20,400))

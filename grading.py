@@ -20,3 +20,4 @@ exam = int(input("What did they score on their exam? "))
 
 
 print(it_average(name, homework, assessment, exam))
+
