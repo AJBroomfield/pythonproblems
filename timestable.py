@@ -1,11 +1,13 @@
-size = 5
+def timetable(size):
+    
+    solution = ''
+    for x in range(1, size+1): 
+        for y in range(1, size+1):
+            solution += str(x*y) + (' '*(9-len(str(x*y))))
+        
+        solution += '\n'
+    return solution
 
-# for x in range(1, size+1): 
-#     print([(x*y) for y in range(1, size+1)])
+print(timetable(10))
 
-# x = ([i for i in range(1, 6)])
-# print(x)
 
-solution = [[(x*y) for x in range(1, size+1)] for y in range(1, size+1)]
-
-print(solution, end=',')
